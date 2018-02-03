@@ -1,0 +1,21 @@
+{
+  "generator-ngx-rocket": {
+    "version": "3.2.1",
+    "props": {
+      "appName": "iko-demo",
+      "target": [
+        "web",
+        "cordova"
+      ],
+      "pwa": true,
+      "mobile": [
+        "ios",
+        "android"
+      ],
+      "ui": "bootstrap",
+      "auth": false,
+      "projectName": "iko-demo",
+      "packageManager": "npm"
+    }
+  }
+}
