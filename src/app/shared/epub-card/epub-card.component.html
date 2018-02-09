@@ -1,0 +1,8 @@
+<div class="card" *ngIf="book">
+  <img class="card-img-top" src="/assets/epub.png" alt="Card image" style="width:100%">
+  <div class="card-body">
+    <h4 class="card-title">{{book.title}}</h4>
+    <p class="card-text">{{book.description}}</p>
+    <button class="btn btn-primary" (click)="openEpub(book)">View Book</button>
+  </div>
+</div>

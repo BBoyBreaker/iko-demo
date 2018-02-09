@@ -1,10 +1,18 @@
-<div class="container-fluid">
-  <div class="jumbotron text-center">
+<div class="container">
+  <!-- <div class="jumbotron text-center">
     <h1>
       <img class="logo" src="assets/ngx-rocket-logo.png" alt="angular logo"/>
       <span translate>Hello world !</span>
     </h1>
     <app-loader [isLoading]="isLoading"></app-loader>
     <q [hidden]="isLoading">{{quote}}</q>
+  </div> -->
+
+  <div class="row">
+
+    <div class="col-md-6" *ngFor="let book of books">
+      <app-epub-card [book]="book"></app-epub-card>
+    </div>
   </div>
+
 </div>
