@@ -1,4 +1,8 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Router } from '@angular/router';
+
+// services
+import { NavDataService } from '../../core/nav-data.service';
 
 // models
 import { EpubSample } from '../../core/models';
@@ -12,7 +16,10 @@ export class EpubCardComponent implements OnInit {
 
   @Input() book: EpubSample;
 
-  constructor() { }
+  constructor(
+    private navDataService: NavDataService,
+    private router: Router,
+  ) { }
 
   ngOnInit() {
   }
@@ -22,7 +29,8 @@ export class EpubCardComponent implements OnInit {
    * @param book the book to open
    */
   openEpub(book: EpubSample): void {
-    console.log(book);
+    this.navDataService.storage = book;
+    this.router.navigate(['/epub']);
   }
 
 }
