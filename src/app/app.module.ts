@@ -17,6 +17,9 @@ import { AboutModule } from './about/about.module';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 
+// custom
+import { EpubModule } from './epub/epub.module';
+
 @NgModule({
   imports: [
     BrowserModule,
@@ -28,6 +31,7 @@ import { AppRoutingModule } from './app-routing.module';
     CoreModule,
     SharedModule,
     HomeModule,
+    EpubModule,
     AboutModule,
     AppRoutingModule
   ],

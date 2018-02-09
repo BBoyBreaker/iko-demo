@@ -5,7 +5,6 @@ import { Route, extract } from '@app/core';
 import { EpubComponent } from './epub.component';
 
 const routes: Routes = Route.withShell([
-  { path: '', redirectTo: '/epub', pathMatch: 'full' },
   { path: 'epub', component: EpubComponent, data: { title: extract('Details') } }
 ]);
 
